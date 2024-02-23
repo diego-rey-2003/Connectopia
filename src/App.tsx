@@ -3,6 +3,7 @@ import './index.css';
 function App() {
   return (
     <>
+    <section id='Starting page'>
       <div className='w-full h-screen bg-cover bg-no-repeat bg-left-bottom bg-fixed' style={{backgroundImage: "url('./src/assets/animated-light-bulb-gif.webp')"}}>
         <div className="h-20 flex items-center">
           <button onClick={() => window.location.href = 'http://localhost:5173'}>
@@ -13,7 +14,7 @@ function App() {
 
           <button onClick={() => window.location.href = ''} className="flex-nowrap ml-96 font-serif hover:text-slate-950 px-14">
             <h1 className="text-4xl text-white hover:border-b-2 border-transparent hover:border-yellow-500 transition-all">
-              Universities
+              Libraries
             </h1>
           </button>
     
@@ -50,8 +51,30 @@ function App() {
               </a>
           </div>
         </div>
-        
       </div>
+      </section>
+
+      <section id='half-page' className='h-screen relative overflow-hidden'>
+        <video autoPlay loop muted className="w-full h-full object-cover absolute inset-0 z-0">
+          <source src="./src/assets/university-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className='w-full h-full flex flex-col justify-center items-center text-center z-10 relative mb-52'>
+          <h1 className='text-6xl  font-serif text-white'>
+            Get access to the Libraries of US 
+          </h1>
+          <h2 className='text-6xl font-serif text-white'>
+            most prestigious universities
+          </h2>
+        </div>
+      </section>
+
+      <section id='second-page' className='h-screen bg-gray-200'>
+        <div className="flex justify-center items-center h-full">
+          <img src="./src/assets/universities.png" alt="universities-logo" />
+        </div>
+      </section>
     </>
   );
 }
