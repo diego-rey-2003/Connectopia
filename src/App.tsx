@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 import './index.css';
 
 function App() {
@@ -46,45 +45,45 @@ function App() {
         <div className='w-full h-screen bg-cover bg-no-repeat bg-left-bottom bg-fixed' style={{backgroundImage: "url('./src/assets/animated-light-bulb-gif.webp')"}}>
           <div className="h-20 flex items-center">
             <button onClick={() => window.location.href = 'http://localhost:5173'}>
-              <h1 className="text-4xl text-white ml-6 font-serif">
+              <h1 className="text-4xl text-white ml-6 font-sans">
                 Connectopia
               </h1>
             </button>
 
-            <button onClick={() => window.location.href = ''} className="flex-nowrap ml-96 font-serif hover:text-slate-950 px-14">
+            <button onClick={() => window.location.href = ''} className="flex-nowrap ml-96 font-sans hover:text-slate-950 px-14">
               <h1 className="text-4xl text-white hover:border-b-2 border-transparent hover:border-yellow-500 transition-all">
                 Libraries
               </h1>
             </button>
       
-            <button onClick={() => window.location.href = ''} className="ml-14 font-serif pr-10">
+            <button onClick={() => window.location.href = ''} className="ml-14 font-sans pr-10">
               <h1 className="text-4xl text-white hover:border-b-2 border-transparent hover:border-yellow-500 transition-all">
                 Account
               </h1>
             </button>
 
-            <a className="block rounded-lg p-1 bg-yellow-500 ring-slate-900/5 shadow-lg space-y-3 hover:bg-yellow-700 ml-14 transition-all">
+            <a className="block rounded-lg p-1 bg-violet-500  ring-slate-900/5 shadow-lg space-y-3 hover:bg-violet-400 ml-14 transition-all">
               <button onClick={() => window.location.href = ''}>
-                <h1 className="text-4xl text-white font-serif">
+                <h1 className="text-4xl text-white font-sans">
                   Subscribe
                 </h1>
               </button>
             </a>
           </div>
 
-          <div className='text-right mt-72 mr-40 font-serif'>
+          <div className='text-right mt-72 mr-40 font-sans'>
             <h1 className='text-5xl text-white ml-14'> 
               Help us open the door 
-              <h2 className='mr-20'>
-                of Knowledge
+              <h2 className='mr-52 mt-5 font-sans'>
+                for 
               </h2>
             </h1>
 
             <div className="flex justify-center ml-96">
-              <a className="inline-block rounded-lg p-1 bg-yellow-500  hover:bg-yellow-700 ml-96 px-10 mt-6 transition-all "> 
+              <a className="inline-block rounded-lg p-3 bg-violet-500  hover:bg-violet-400 ml-96 px-10 mt-6 transition-all "> 
                   <button onClick={() => window.location.href = ''}>
-                    <h3 className="text-4xl text-white font-serif">
-                      Wisdom 
+                    <h3 className="text-4xl text-white font-sans">
+                    Knowledge 
                     </h3>
                   </button>
                 </a>
@@ -100,22 +99,76 @@ function App() {
         </video>
 
         <div className='w-full h-full flex flex-col justify-center items-center text-center z-10 relative mb-52'>
-          <h1 className='text-6xl  font-serif text-white'>
+          <h1 className='text-6xl  font-sans text-white'>
             Get access to the Libraries of US 
           </h1>
-          <h2 className='text-6xl font-serif text-white'>
+          <h2 className='text-6xl font-sans text-white'>
             most prestigious universities
           </h2>
         </div>
       </section>
 
-      <section id='second-page' className='h-screen bg-gray-200'>
-        <div className="flex justify-center items-center h-full">
-          <img src="./src/assets/universities.png" alt="universities-logo" />
+      <section id='second-page' className='h-screen flex items-center bg-slate-50'>
+        <div className="container mx-auto flex justify-center px-10">
+          <div className="w-1/2">
+            <div className="rounded-lg w-full h-96 shadow-2xl bg-slate-50 flex justify-between items-center ">
+              <div className="flex flex-col ">
+                <img src="./src/assets/SFSU.png" alt="SFSU-logo" className='h-32 ml-2 mb-4 ' />
+                <img src="./src/assets/UH-logo.png" alt="UH-logo" className='h-32 ml-3 m-1' />
+              </div>
+              <div className="flex flex-col">
+                <img src="./src/assets/michigan-logo.png" alt="michigan-logo" className='h-32 mb-2 transition ease-in-out delay-100' />
+                <img src="./src/assets/berkeley-logo.png" alt="berkeley-logo" className='h-32 mt-3' />
+              </div>
+              <div className="flex flex-col">
+                <img src="./src/assets/MIT-logo.png" alt="MIT-logo" className='h-32 mb-2' />
+                <img src="./src/assets/a&m-logo.png" alt="a&m-logo" className='h-32 mr-12' />
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 text-right pr-10 ">
+          <p className="mt-10 text-xl text-violet-500 mr-60 ">Welcome to Connectopia!</p>
+            <h1 className="text-5xl font-bold mr-40">What we offer</h1>
+            <p className="mt-5 text-xl mr- ml-24 text-justify">
+            We partnered with the best universities in the United States 
+              to provide access to their Libraries so you don't have to fully enroll
+              in the university but you still get access to most of the knowledge 
+              they give a student. Don't tell me it's not awesome  
+             </p>
+          </div>
         </div>
       </section>
+      <section id='third page' className='h-screen flex items-center justify-center bg-slate-50'>
+  <div className='text-center'>
+    <h1 className='text-8xl mb-8 ml-52 mr-52 font-sans'>
+      Join thousands of learners and start your knowledge journey today
+    </h1>
+    <div className="flex justify-center"> 
+      <a className="block rounded-lg p-4 bg-violet-500 ring-slate-900/5 shadow-lg hover:bg-violet-400 transition-all shadow-2xl">
+        <button onClick={() => window.location.href = ''} className="text-4xl text-white font-sans">
+          Subscribe
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+<section className='h-12 bg-black'>
+  <div className='flex items-center'>
+    <h1 className='text-white ml-96 mt-4 px-36 font-sans'>
+     © 2024 Connectopia™. All Rights Reserved.
+    </h1>
+
+  </div>
+
+</section>
+
+
+      
     </>
+    
+    
   );
+  
 }
 
 export default App;
