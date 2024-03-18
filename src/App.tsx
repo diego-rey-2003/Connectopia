@@ -45,7 +45,7 @@ function App() {
         <div className='w-full h-screen bg-cover bg-no-repeat bg-left-bottom bg-fixed' style={{backgroundImage: "url('./src/assets/animated-light-bulb-gif.webp')"}}>
           <div className="h-20 flex items-center">
             <button onClick={() => window.location.href = 'http://localhost:5173'}>
-              <h1 className="text-4xl text-white ml-6 font-sans">
+              <h1 className="text-4xl text-white ml-6 font-sans mr-28">
                 Connectopia
               </h1>
             </button>
@@ -71,16 +71,13 @@ function App() {
             </a>
           </div>
 
-          <div className='text-right mt-72 mr-40 font-sans'>
-            <h1 className='text-5xl text-white ml-14'> 
-              Help us open the door 
-              <h2 className='mr-52 mt-5 font-sans'>
-                for 
-              </h2>
+          <div className='text-right mt-72 mr-20 font-sans '>
+            <h1 className='text-4xl text-white ml-14 mr-12'> 
+              Help us open the door for
             </h1>
 
             <div className="flex justify-center ml-96">
-              <a className="inline-block rounded-lg p-3 bg-violet-500  hover:bg-violet-400 ml-96 px-10 mt-6 transition-all "> 
+              <a className="inline-block rounded-lg p-3 bg-violet-500  hover:bg-violet-400 ml-96 px-10 mt-6 transition-all -mx-24"> 
                   <button onClick={() => window.location.href = ''}>
                     <h3 className="text-4xl text-white font-sans">
                     Knowledge 
@@ -127,14 +124,15 @@ function App() {
             </div>
           </div>
           <div className="w-1/2 text-right pr-10 ">
-          <p className="mt-10 text-xl text-violet-500 mr-60 ">Welcome to Connectopia!</p>
-            <h1 className="text-5xl font-bold mr-40">What we offer</h1>
-            <p className="mt-5 text-xl mr- ml-24 text-justify">
+            <h1 className="text-5xl font-bold mr-40 mt-16">What we offer</h1>
+            <p className="mt-7 text-xl ml-24 text-justify">
             We partnered with the best universities in the United States 
               to provide access to their Libraries so you don't have to fully enroll
               in the university but you still get access to most of the knowledge 
               they give a student. Don't tell me it's not awesome  
              </p>
+
+             <p className="mt-6 text-xl text-violet-500 mr-60 ">Welcome to Connectopia!</p>
           </div>
         </div>
       </section>
