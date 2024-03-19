@@ -123,7 +123,7 @@ AOS.init({
 
       <section id='half-page' ref={halfPageRef} className='h-screen relative overflow-hidden' style={{ opacity: 0 }}>
         <video autoPlay loop muted className="w-full h-full object-cover absolute inset-0 z-0">
-          <source src="../public/assets/university-video.mp4" type="video/mp4" />
+          <source src="./assets/university-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
