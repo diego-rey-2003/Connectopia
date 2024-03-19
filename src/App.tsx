@@ -170,20 +170,20 @@ AOS.init({
       </section>
       <section id='third page' className='h-screen flex items-center justify-center bg-slate-50'>
   <div className='text-center' data-aos="zoom-in">
-    <h1 className='text-7xl mb-8 ml-1 mr-92 px-32 font-sans text-left'>
+    <h1 className='text-7xl mb-8 ml-32 px- font-sans text-left'>
       Join thousands of learners and start your knowledge journey today
     </h1>
     <div className="flex justify-center"> 
-      <a className="block rounded-lg p-4 bg-yellow-500 ring-slate-900/5  hover:bg-yellow-400 transition-all shadow-2xl mt-10 mr-52">
+      <a className="block rounded-lg p-4 bg-yellow-500 ring-slate-900/5  hover:bg-yellow-400 transition-all shadow-2xl mt-10 mr-5">
         <button onClick={() => window.location.href = ''} className="text-4xl text-white font-sans">
           Subscribe
         </button>
       </a>
     </div>
   </div>
-  <img src="./public/assets/secondimage.png" alt="" />
+  <img src="./public/assets/secondimage.png" alt="books'image" />
 </section>
-<section className='h-12 bg-black'>
+<section className='h-96 bg-black'>
   <div className='flex items-center'>
     <h1 className='text-white ml-96 mt-4 px-44 font-sans'>
      © 2024 Connectopia™. All Rights Reserved.
