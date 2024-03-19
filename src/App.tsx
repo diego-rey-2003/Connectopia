@@ -74,7 +74,7 @@ AOS.init({
   return (
     <>
       <section id='Starting-page' ref={startingPageRef}>
-        <div className='w-full h-screen bg-cover bg-no-repeat bg-left-bottom bg-fixed' style={{backgroundImage: "url('./public/assets/animated-light-bulb-gif.webp')"}}>
+        <div className='w-full h-screen bg-cover bg-no-repeat bg-left-bottom bg-fixed' style={{backgroundImage: "url('../public/assets/animated-light-bulb-gif.webp')"}}>
           <div className="h-20 flex items-center">
             <button onClick={() => window.location.href = 'http://localhost:5173'}>
               <h1 className="text-4xl text-white ml-6 font-sans mr-28">
@@ -123,7 +123,7 @@ AOS.init({
 
       <section id='half-page' ref={halfPageRef} className='h-screen relative overflow-hidden' style={{ opacity: 0 }}>
         <video autoPlay loop muted className="w-full h-full object-cover absolute inset-0 z-0">
-          <source src="./public/assets/university-video.mp4" type="video/mp4" />
+          <source src="../public/assets/university-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -142,16 +142,16 @@ AOS.init({
           <div className="w-1/2">
             <div className="rounded-lg w-full h-96 shadow-2xl bg-slate-50 flex justify-between items-center ">
               <div className="flex flex-col ">
-                <img src="./public/assets/SFSU.png" alt="SFSU-logo" className='h-32 ml-2 mb-4 ' />
-                <img src="./public/assets/UH-logo.png" alt="UH-logo" className='h-32 ml-3 m-1' />
+                <img src="../public/assets/SFSU.png" alt="SFSU-logo" className='h-32 ml-2 mb-4 ' />
+                <img src="../public/assets/UH-logo.png" alt="UH-logo" className='h-32 ml-3 m-1' />
               </div>
               <div className="flex flex-col">
-                <img src="./public/assets/michigan-logo.png" alt="michigan-logo" className='h-32 mb-2 transition ease-in-out delay-100' />
-                <img src="./public/assets/berkeley-logo.png" alt="berkeley-logo" className='h-32 mt-3' />
+                <img src="../public/assets/michigan-logo.png" alt="michigan-logo" className='h-32 mb-2 transition ease-in-out delay-100' />
+                <img src="../public/assets/berkeley-logo.png" alt="berkeley-logo" className='h-32 mt-3' />
               </div>
               <div className="flex flex-col">
-                <img src="./public/assets/MIT-logo.png" alt="MIT-logo" className='h-32 mb-2' />
-                <img src="./public/assets/a&m-logo.png" alt="a&m-logo" className='h-32 mr-9 ml-9' />
+                <img src="../public/assets/MIT-logo.png" alt="MIT-logo" className='h-32 mb-2' />
+                <img src="../public/assets/a&m-logo.png" alt="a&m-logo" className='h-32 mr-9 ml-9' />
               </div>
             </div>
           </div>
@@ -181,7 +181,11 @@ AOS.init({
       </a>
     </div>
   </div>
+<<<<<<< HEAD
   <img src="./public/assets/secondimage.png" alt="books'image" />
+=======
+  <img src="../public/assets/secondimage.png" alt="" />
+>>>>>>> refs/remotes/origin/main
 </section>
 <section className='h-96 bg-black'>
   <div className='flex items-center'>
