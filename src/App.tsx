@@ -2,8 +2,35 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './index.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+
+  AOS.init();
+
+
+AOS.init({
+
+  disable: false,
+  startEvent: 'DOMContentLoaded', 
+  initClassName: 'aos-init',
+  animatedClassName: 'aos-animate', 
+  useClassNames: false,
+  disableMutationObserver: false, 
+  debounceDelay: 50, 
+  throttleDelay: 99, 
+  
+
+  offset: 120, 
+  delay: 0, 
+  duration: 400, 
+  easing: 'ease', 
+  once: false,
+  mirror: false, 
+  anchorPlacement: 'top-bottom', 
+
+});
   const halfPageRef = useRef(null);
   const startingPageRef = useRef(null);
 
@@ -37,6 +64,11 @@ function App() {
       }
     });
 
+    AOS.init({
+      duration: 2000,
+    })
+    
+
   }, []);
 
   return (
@@ -51,7 +83,7 @@ function App() {
             </button>
 
             <button onClick={() => window.location.href = ''} className="flex-nowrap ml-96 font-sans hover:text-slate-950 px-14">
-              <h1 className="text-4xl text-white hover:border-b-2 border-transparent hover:border-yellow-500 transition-all">
+              <h1 className="text-4xl text-white hover:border-b-2 border-transparent border-yellow-500 transition-all">
                 Libraries
               </h1>
             </button>
@@ -62,7 +94,7 @@ function App() {
               </h1>
             </button>
 
-            <a className="block rounded-lg p-1 bg-violet-500  ring-slate-900/5 shadow-lg space-y-3 hover:bg-violet-400 ml-14 transition-all">
+            <a className="block rounded-lg p-1 bg-yellow-500  ring-slate-900/5 shadow-lg space-y-3 hover:bg-yellow-400 ml-14 transition-all">
               <button onClick={() => window.location.href = ''}>
                 <h1 className="text-4xl text-white font-sans">
                   Subscribe
@@ -77,7 +109,7 @@ function App() {
             </h1>
 
             <div className="flex justify-center ml-96">
-              <a className="inline-block rounded-lg p-3 bg-violet-500  hover:bg-violet-400 ml-96 px-10 mt-6 transition-all -mx-24"> 
+              <a className="inline-block rounded-lg p-3 bg-yellow-500  hover:bg-yellow-400 ml-96 px-10 mt-6 transition-all -mx-24"> 
                   <button onClick={() => window.location.href = ''}>
                     <h3 className="text-4xl text-white font-sans">
                     Knowledge 
@@ -96,7 +128,7 @@ function App() {
         </video>
 
         <div className='w-full h-full flex flex-col justify-center items-center text-center z-10 relative mb-52'>
-          <h1 className='text-6xl  font-sans text-white'>
+          <h1 className='text-6xl  font-sans text-white '>
             Get access to the Libraries of US 
           </h1>
           <h2 className='text-6xl font-sans text-white'>
@@ -105,7 +137,7 @@ function App() {
         </div>
       </section>
 
-      <section id='second-page' className='h-screen flex items-center bg-slate-50'>
+      <section id='second-page' className='h-screen flex items-center bg-slate-50' data-aos="fade-up">
         <div className="container mx-auto flex justify-center px-10">
           <div className="w-1/2">
             <div className="rounded-lg w-full h-96 shadow-2xl bg-slate-50 flex justify-between items-center ">
@@ -119,7 +151,7 @@ function App() {
               </div>
               <div className="flex flex-col">
                 <img src="./public/assets/MIT-logo.png" alt="MIT-logo" className='h-32 mb-2' />
-                <img src="./public/assets/a&m-logo.png" alt="a&m-logo" className='h-32 mr-12' />
+                <img src="./public/assets/a&m-logo.png" alt="a&m-logo" className='h-32 mr-9 ml-9' />
               </div>
             </div>
           </div>
@@ -132,27 +164,28 @@ function App() {
               they give a student. Don't tell me it's not awesome  
              </p>
 
-             <p className="mt-6 text-xl text-violet-500 mr-60 ">Welcome to Connectopia!</p>
+             <p className="mt-6 text-3xl text-yellow-500 mr-32 ">Welcome to Connectopia!</p>
           </div>
         </div>
       </section>
       <section id='third page' className='h-screen flex items-center justify-center bg-slate-50'>
-  <div className='text-center'>
-    <h1 className='text-8xl mb-8 ml-52 mr-52 font-sans'>
+  <div className='text-center' data-aos="zoom-in">
+    <h1 className='text-7xl mb-8 ml-1 mr-92 px-32 font-sans text-left'>
       Join thousands of learners and start your knowledge journey today
     </h1>
     <div className="flex justify-center"> 
-      <a className="block rounded-lg p-4 bg-violet-500 ring-slate-900/5  hover:bg-violet-400 transition-all shadow-2xl">
+      <a className="block rounded-lg p-4 bg-yellow-500 ring-slate-900/5  hover:bg-yellow-400 transition-all shadow-2xl mt-10 mr-52">
         <button onClick={() => window.location.href = ''} className="text-4xl text-white font-sans">
           Subscribe
         </button>
       </a>
     </div>
   </div>
+  <img src="./public/assets/secondimage.png" alt="" />
 </section>
 <section className='h-12 bg-black'>
   <div className='flex items-center'>
-    <h1 className='text-white ml-96 mt-4 px-36 font-sans'>
+    <h1 className='text-white ml-96 mt-4 px-44 font-sans'>
      © 2024 Connectopia™. All Rights Reserved.
     </h1>
 
