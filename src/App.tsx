@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <section id='Starting-page' ref={startingPageRef}>
-        <div className='w-full h-screen bg-cover bg-no-repeat bg-left-bottom bg-fixed' style={{backgroundImage: "url('./src/assets/animated-light-bulb-gif.webp')"}}>
+        <div className='w-full h-screen bg-cover bg-no-repeat bg-left-bottom bg-fixed' style={{backgroundImage: "url('./public/assets/animated-light-bulb-gif.webp')"}}>
           <div className="h-20 flex items-center">
             <button onClick={() => window.location.href = 'http://localhost:5173'}>
               <h1 className="text-4xl text-white ml-6 font-sans mr-28">
@@ -91,7 +91,7 @@ function App() {
 
       <section id='half-page' ref={halfPageRef} className='h-screen relative overflow-hidden' style={{ opacity: 0 }}>
         <video autoPlay loop muted className="w-full h-full object-cover absolute inset-0 z-0">
-          <source src="./src/assets/university-video.mp4" type="video/mp4" />
+          <source src="./public/assets/university-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -110,16 +110,16 @@ function App() {
           <div className="w-1/2">
             <div className="rounded-lg w-full h-96 shadow-2xl bg-slate-50 flex justify-between items-center ">
               <div className="flex flex-col ">
-                <img src="./src/assets/SFSU.png" alt="SFSU-logo" className='h-32 ml-2 mb-4 ' />
-                <img src="./src/assets/UH-logo.png" alt="UH-logo" className='h-32 ml-3 m-1' />
+                <img src="./public/assets/SFSU.png" alt="SFSU-logo" className='h-32 ml-2 mb-4 ' />
+                <img src="./public/assets/UH-logo.png" alt="UH-logo" className='h-32 ml-3 m-1' />
               </div>
               <div className="flex flex-col">
-                <img src="./src/assets/michigan-logo.png" alt="michigan-logo" className='h-32 mb-2 transition ease-in-out delay-100' />
-                <img src="./src/assets/berkeley-logo.png" alt="berkeley-logo" className='h-32 mt-3' />
+                <img src="./public/assets/michigan-logo.png" alt="michigan-logo" className='h-32 mb-2 transition ease-in-out delay-100' />
+                <img src="./public/assets/berkeley-logo.png" alt="berkeley-logo" className='h-32 mt-3' />
               </div>
               <div className="flex flex-col">
-                <img src="./src/assets/MIT-logo.png" alt="MIT-logo" className='h-32 mb-2' />
-                <img src="./src/assets/a&m-logo.png" alt="a&m-logo" className='h-32 mr-12' />
+                <img src="./public/assets/MIT-logo.png" alt="MIT-logo" className='h-32 mb-2' />
+                <img src="./public/assets/a&m-logo.png" alt="a&m-logo" className='h-32 mr-12' />
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ function App() {
       Join thousands of learners and start your knowledge journey today
     </h1>
     <div className="flex justify-center"> 
-      <a className="block rounded-lg p-4 bg-violet-500 ring-slate-900/5 shadow-lg hover:bg-violet-400 transition-all shadow-2xl">
+      <a className="block rounded-lg p-4 bg-violet-500 ring-slate-900/5  hover:bg-violet-400 transition-all shadow-2xl">
         <button onClick={() => window.location.href = ''} className="text-4xl text-white font-sans">
           Subscribe
         </button>
