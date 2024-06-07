@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef} from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './index.css';
@@ -95,7 +95,7 @@ AOS.init({
             </button>
 
             <a className="block rounded-lg p-1 bg-yellow-500  ring-slate-900/5 shadow-lg space-y-3 hover:bg-yellow-400 ml-14 transition-all">
-              <button onClick={() => window.location.href = ''}>
+              <button onClick={() => window.location.href = './src/subscribe.tsx'}>
                 <h1 className="text-4xl text-white font-sans">
                   Subscribe
                 </h1>
@@ -110,7 +110,7 @@ AOS.init({
 
             <div className="flex justify-center ml-96">
               <a className="inline-block rounded-lg p-3 bg-yellow-500  hover:bg-yellow-400 ml-96 px-10 mt-6 transition-all -mx-24"> 
-                  <button onClick={() => window.location.href = ''}>
+                  <button onClick={() => window.location.href = './subscribe'}>
                     <h3 className="text-4xl text-white font-sans">
                     Knowledge 
                     </h3>
@@ -151,7 +151,7 @@ AOS.init({
               </div>
               <div className="flex flex-col">
                 <img src="./assets/MIT-logo.png" alt="MIT-logo" className='h-32 mb-2' />
-                <img src="./assets/a&M-logo.png" alt="a&m-logo" className='h-32 mr-9 ml-9' />
+                <img src="./assets/a&m-logo.png" alt="a&m-logo" className='h-32 mr-9 ml-9' />
               </div>
             </div>
           </div>
@@ -175,7 +175,7 @@ AOS.init({
     </h1>
     <div className="flex justify-center"> 
       <a className="block rounded-lg p-4 bg-yellow-500 ring-slate-900/5  hover:bg-yellow-400 transition-all shadow-2xl mt-10 ml-24">
-        <button onClick={() => window.location.href = ''} className="text-4xl text-white font-sans">
+        <button onClick={() => window.location.href = '/subscribe.tsx'} className="text-4xl text-white font-sans">
           Subscribe
         </button>
       </a>
@@ -194,8 +194,6 @@ AOS.init({
   </div>
 
 </section>
-
-
       
     </>
     
